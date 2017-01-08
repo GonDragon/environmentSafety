@@ -1,0 +1,17 @@
+[{
+  "op" : "add",
+  "path" : "/defaultBlueprints/tier1/-",
+  "value" : { "item" : "es_console" }
+},
+
+{
+  "op" : "add",
+  "path" : "/defaultBlueprints/tier1/-",
+  "value" : { "item" : "es_ambientNode" }
+},
+
+{
+  "op" : "add",
+  "path" : "/defaultBlueprints/tier1/-",
+  "value" : { "item" : "es_environmentManipulator" }
+}]

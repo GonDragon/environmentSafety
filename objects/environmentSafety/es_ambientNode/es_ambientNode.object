@@ -1,0 +1,58 @@
+{
+	"objectName": "es_ambientNode",
+	"colonyTags": ["wired","electronic"],
+	"rarity": "Common",
+	"category": "wired",
+	"price": 300,
+
+	"description": "Extends the capabilities of a Environmental Safety Console to other rooms",
+	"shortdescription": "Ambiental Node",
+	"race": "generic",
+
+	"apexDescription": "An ambiental node. Extends the function of a safety console.",
+	"avianDescription": "This tiny light says this room is safe.",
+	"floranDescription": "Shiny light that keep uss ssafe.",
+	"glitchDescription": "Intrigued. Is this an ambiental node?",
+	"humanDescription": "a little light that extends the function of a safety console.",
+	"hylotlDescription": "An ambiental node. Usually found in hazardous ambients.",
+	"novakidDescription": "A fancy little light to keep us safe.",
+
+	"inventoryIcon": "es_ambientNode.png:idle.1",
+	"orientations": [{
+		"image": "es_ambientNode.png:idle.1",
+		"direction": "right",
+        "flipImages" : false,
+        "imagePosition" : [0, 0],
+		"frames": 1,
+		"animationCycle": 0.5,
+
+		"spaceScan": 0.1,
+		"anchors": ["background"]
+	}],
+
+	"scripts": [
+		"/objects/environmentSafety/es_ambientNode/es_ambientNode.lua",
+		"/objects/environmentSafety/es_console/scanning.lua",
+		"/scripts/util.lua"
+	],
+	"scriptDelta": 42,
+
+	"es_ambientNode": {
+		"debug": true,
+		"interactive": false,
+		"requireFilledBackground": true,
+		"position": [0, 1],
+		"positionVariance": [1, 0],
+		"maxPerimeter": 800,
+        "deltaCheck": 2
+	},
+    
+    "animation" : "/objects/environmentSafety/es_ambientNode/es_ambientNode.animation",
+    "animationParts" : {
+      "switch" : "es_ambientNode.png"
+    },    
+    
+    "inputNodes" : [ [0, 0] ],
+    "outputNodes" : [ [1, 0] ]
+
+}

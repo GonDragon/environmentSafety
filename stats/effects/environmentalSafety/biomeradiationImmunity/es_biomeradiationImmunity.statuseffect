@@ -1,0 +1,9 @@
+{
+  "name" : "es_biomeradiationImmunity",
+  "effectConfig" : {},
+  "defaultDuration" : 10,
+
+  "scripts" : [
+    "es_biomeradiationImmunity.lua"
+  ]
+}

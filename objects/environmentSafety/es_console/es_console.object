@@ -1,0 +1,69 @@
+{
+	"objectName": "es_console",
+	"colonyTags": ["wired","electronic"],
+	"rarity": "Common",
+	"category": "console",
+	"price": 750,
+
+	"description": "Manage the environment of the room",
+	"shortdescription": "Environmental Console",
+	"race": "generic",
+
+	"apexDescription": "A well made panel. It can control the environment of the surroundings.",
+	"avianDescription": "This control panel makes me feel safe.",
+	"floranDescription": "Shiny box to keep uss ssafe.",
+	"glitchDescription": "Relief. This console protect us.",
+	"humanDescription": "A safety console. It can control the environment of the surroundings.",
+	"hylotlDescription": "A safety console. Common in hazardous planets.",
+	"novakidDescription": "A good 'ol safety console. Now I'm feeling safe!",
+
+	"inventoryIcon": "es_console.png:idle.1",
+	"orientations": [{
+		"image": "es_console.png:idle.1",
+		"direction": "right",
+        "flipImages" : false,
+        "imagePosition" : [0, 0],
+		"frames": 1,
+		"animationCycle": 0.5,
+
+		"spaceScan": 0.1,
+		"anchors": ["background"]
+	}],
+
+	"scripts": [
+		"/objects/environmentSafety/es_console/es_console.lua",
+		"/objects/environmentSafety/es_console/scanning.lua",
+		"/scripts/util.lua"
+	],
+	"scriptDelta": 42,
+
+	"es_console": {
+		"debug": true,
+		"interactive": true,
+		"requireFilledBackground": true,
+		"position": [0, 1],
+		"positionVariance": [1, 0],
+		"maxPerimeter": 800,
+        "deltaCheck": 4
+	},
+    
+    "environment": {
+        "gravity" : true,
+        "breath" : true,
+        "nanoheal" : true,
+        "heat" : false,
+        "cold" : false,
+        "radiation" : false
+    },
+    
+    "animation" : "/objects/environmentSafety/es_console/es_console.animation",
+    "animationParts" : {
+      "switch" : "es_console.png"
+    },    
+    
+	"interactAction": "ScriptPane",
+	"interactData": "/interface/environmentalSafety/es_console.config",
+    
+    "outputNodes" : [ [0, 0] ]
+
+}

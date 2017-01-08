@@ -1,0 +1,9 @@
+{
+  "name" : "es_biomecoldImmunity",
+  "effectConfig" : {},
+  "defaultDuration" : 10,
+
+  "scripts" : [
+    "es_biomecoldImmunity.lua"
+  ]
+}

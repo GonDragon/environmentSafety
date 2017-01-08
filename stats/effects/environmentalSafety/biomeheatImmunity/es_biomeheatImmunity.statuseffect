@@ -1,0 +1,9 @@
+{
+  "name" : "es_biomeheatImmunity",
+  "effectConfig" : {},
+  "defaultDuration" : 10,
+
+  "scripts" : [
+    "es_biomeheatImmunity.lua"
+  ]
+}

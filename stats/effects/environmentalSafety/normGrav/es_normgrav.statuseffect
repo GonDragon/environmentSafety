@@ -1,0 +1,11 @@
+{
+  "name" : "es_normgrav",
+  "effectConfig" : {
+    "gravityDesired" : 100
+  },
+  "defaultDuration" : 15,
+
+  "scripts" : [
+    "es_normgrav.lua"
+  ]
+}

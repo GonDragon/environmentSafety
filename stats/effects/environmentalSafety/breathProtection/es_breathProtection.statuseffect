@@ -1,0 +1,9 @@
+{
+  "name" : "es_breathProtection",
+  "effectConfig" : {},
+  "defaultDuration" : 10,
+
+  "scripts" : [
+    "es_breathProtection.lua"
+  ]
+}

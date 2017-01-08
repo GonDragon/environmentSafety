@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "durasteelbar", "count" : 20 },
+    { "item" : "siliconboard", "count" : 3 },
+    { "item" : "wire", "count" : 10 }
+  ],
+  "output" : { "item" : "es_environmentManipulator", "count" : 1 },
+  "groups" : [ "craftingwiring", "mechanics" ]
+}

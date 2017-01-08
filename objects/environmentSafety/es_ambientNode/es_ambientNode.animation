@@ -1,0 +1,61 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "switchState" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          },
+          "ok" : {
+            "frames" : 1
+          },
+          "working" : {
+            "frames" : 1
+          },
+          "error" : {
+            "frames" : 2,
+            "cycle" : 0.5,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "switch" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "switchState" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            
+            "ok" : {
+              "properties" : {
+                "image" : "<partImage>:ok.<frame>"
+              }
+            },
+            
+            "working" : {
+              "properties" : {
+                "image" : "<partImage>:working.<frame>"
+              }
+            },
+
+            "error" : {
+              "properties" : {
+                "image" : "<partImage>:error.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

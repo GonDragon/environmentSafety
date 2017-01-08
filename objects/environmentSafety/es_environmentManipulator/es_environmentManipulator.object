@@ -1,0 +1,57 @@
+{
+	"objectName": "es_environmentManipulator",
+	"colonyTags": ["wired","electronic"],
+	"rarity": "Common",
+	"category": "console",
+	"price": 750,
+
+	"description": "Manage the environment of a huge area.",
+	"shortdescription": "Environment Manipulator",
+	"race": "generic",
+
+	"apexDescription": "A well made panel. It can control the environment of the surroundings.",
+	"avianDescription": "This control panel makes me feel safe.",
+	"floranDescription": "Shiny box to keep uss ssafe.",
+	"glitchDescription": "Relief. This console protect us.",
+	"humanDescription": "A safety console. It can control the environment of the surroundings.",
+	"hylotlDescription": "A safety console. Common in hazardous planets.",
+	"novakidDescription": "A good 'ol safety console. Now I'm feeling safe!",
+
+	"inventoryIcon": "es_environmentManipulator.png",
+	"orientations": [{
+		"image": "es_environmentManipulator.png:<color>",
+		"direction": "right",
+        "flipImages" : false,
+        "imagePosition" : [-28, 0],
+        "frames" : 1,
+        "animationCycle" : 1.0,
+
+		"spaceScan": 0.1,
+		"anchors": ["bottom"]
+	}],
+
+	"scripts": [
+		"/objects/environmentSafety/es_environmentManipulator/es_environmentManipulator.lua",
+		"/scripts/util.lua"
+	],
+	"scriptDelta": 42,
+    
+    "environment": {
+        "gravity" : true,
+        "breath" : true,
+        "nanoheal" : true,
+        "heat" : false,
+        "cold" : false,
+        "radiation" : false
+    },
+    
+    "es_environmentManipulator": {
+		"interactive": true,
+		"position": [0, 1],
+		"positionVariance": [1, 0],
+		"radio": 500
+	},
+    
+	"interactAction": "ScriptPane",
+	"interactData": "/interface/environmentalSafety/es_console.config"
+}

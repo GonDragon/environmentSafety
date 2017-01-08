@@ -1,0 +1,20 @@
+{
+  "projectileName" : "es_radiation",
+  "physics" : "statuspod",
+  "bounces" : -1,
+  "timeToLive" : 0.25,
+  "speed" : 0,
+  "image" : "es_radiation.png",
+  "frameNumber" : 1,
+  "animationLoops" : false,
+  "power" : 0,
+  "piercing" : true,
+  "damageKind" : "hidden",
+  "damageType" : "ignoresdef",
+  "damagePoly" : [ [-5, -5], [-5, 5], [5, 5], [5, -5]  ],
+  "flippable" : true,
+  "damageTeam" : { "type" : "indiscriminate" },
+  "statusEffects" : [
+    {"effect" : "es_biomeradiationImmunity", "duration" : 2}
+  ]
+}
